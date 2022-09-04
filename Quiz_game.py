@@ -12,7 +12,7 @@ score = 0
 answer = input("What does CPU stand for? ")  #  pytanie do użytkownika
 if answer.lower() == "central processing unit":  # jeśli odpowiedź to "tekst z cudzysłowia" 
     print("Correct!")  # wyświetla się informacja, że to prawidłowa odpowiedź
-    score += 1
+    score += 1  # do wyniku doda się 1 punkt za prawidłową odpowiedź (to samo co score = score + 1)
 else: 
     print("Incorrect!")
 
@@ -42,5 +42,5 @@ else:
 
 print()
 
-print("You got " + str(score) + " questions correct!")
-print("You got " + str((score / 4) * 100) + "%")
+print("You got " + str(score) + " questions correct!")  # wyświetla ilość poprawnych pytań
+print("You got " + str((score / 4) * 100) + "%")  # wyświetla wynik procentowy
